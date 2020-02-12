@@ -1,4 +1,4 @@
-function hoverHeader () {
+function hoverHeader() {
     const header = document.querySelector(".header");
     const modal = document.getElementById("myModal");
     header.addEventListener("mouseover", e => {
@@ -6,12 +6,12 @@ function hoverHeader () {
     });
 
     modal.addEventListener("click", (e) => {
-        switch(e.target.className) {
+        switch (e.target.className) {
             case "close":
             case "modal":
-            modal.style.display = "none"
-            break;
+                modal.style.display = "none"
+                break;
         }
     })
 }
-export {hoverHeader};
+export { hoverHeader };
